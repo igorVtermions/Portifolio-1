@@ -27,12 +27,15 @@ a {
   
   .logo{
     object-fit: cover;
-    width: 60px ;
+    width: 90px ;
     margin-left: 32px;
   }
 
   header{
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
   }
   
   nav {
@@ -76,7 +79,7 @@ a {
       overflow-x: hidden;
     }
     .nav-list {
-      position: absolute;
+      position: fixed;
       top: 8vh;
       right: 0;
       width: 50vw;
@@ -87,7 +90,7 @@ a {
       justify-content: space-between;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
-      z-index: 1;
+      z-index: 100;
       
     }
     .nav-list li {
@@ -195,11 +198,12 @@ a {
 
 /* Card */
 
-.cards{
+#cards{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: -300px ;
+  margin-bottom: 150px;
 }
 
 .card{
@@ -264,4 +268,62 @@ a {
   background-color:#6200ff ;
   color: white;
   cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+  max-width: 1980px;
+  margin: 0 ;
+  padding: 20px;
+  background-color: blue;
+
+}
+
+.logo-footer p{
+  color: white;
+}
+
+.footer01{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logo-footer img{
+  max-width: 100%;
+  width: 130px;
+}
+
+.icons{
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.footer2{
+  text-align: center;
+  background-color: rgb(82, 82, 201);
+  padding: 5px 0;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .footer01 {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .icons {
+      padding: 20px;
+  }
 }
