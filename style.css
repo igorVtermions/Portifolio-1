@@ -186,7 +186,6 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: -300px;
-    padding: 100px 0;
 }
 
 .title span{
@@ -196,106 +195,73 @@ a {
 
 /* Card */
 
-.cardcontainer {
-  width: 100%;
+.cards{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-top: -350px;
+  margin-top: -300px ;
 }
 
-.card {
-  width: 300px;
-  height: 460px;
-  margin: 25px;
-  background-color: #6200ff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
+.card{
+  width: 270px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 5px 5px 15px -4px #000000;
+  transition: all 0.3s ease 0s;
+  border-radius: 15px;
 }
 
+.card:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
 
-.card-header {
-  width: 100%;
+.cardimg{
   height: 200px;
-  overflow: hidden;
+  margin: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.card-img {
-  min-width: 100%;
-  width: auto;
-  height: 100%;
+.card-1{
+  background-image: url(imgprojetos/Logins-code.png);
 }
 
+.card-2{
+  background-image: url(imgprojetos/formulario.jpg);
+}
 
-.card-body {
-  height: 170px;
-  padding: 15px;
+.card-3{
+  background-image: url(imgprojetos/portifolip.jpg);
+}
+
+.card-4{
+  background-image: url(imgprojetos/landpage.jpg);
+}
+
+.card-5{
+  background-image: url(imgprojetos/comming-soon.jpg);
+}
+
+.card-6{
+  background-image: url(imgprojetos/comming-soon.jpg);
+}
+
+.card h2{
   text-align: center;
-  font-family: sans-serif;
+  margin-top: 50px;
 }
 
-.card-local {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.card-titulo {
-  font-size: 32px;
-  margin: 15px 0;
-}
-
-.card-texto {
-  font-size: 15px;
-  width: 250px;
-  margin: 0 auto;
-  color: #fff;
-}
-
-
-.card-footer {
-  margin-top: 10px;
+.card p{
   text-align: center;
-  background-color: #000;
+  margin: 15px;
 }
 
-.card-footer a {
-  color: #fff;
-  display: block;
-  padding: 16px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-weight: 600;
+.card button{
+  width: 100%;
+  border: none;
+  height: 50px;
+  background-color:#6200ff ;
+  color: white;
+  cursor: pointer;
 }
-
-
-.card-1 .card-footer {
-  background-color: #2740d1;
-}
-
-.card-1 .card-local {
-  color: #ffffff;
-}
-
-.card-2 .card-footer {
-  background-color: #2740d1;
-}
-
-.card-2 .card-local {
-  color: #ffffff;
-}
-
-.card-3 .card-footer {
-  background-color: #2740d1;
-}
-
-.card-3 .card-local {
-  color: #ffffff;
-}
-
-
-.card:hover {
-  transform: scale3d(1.1, 1.1, 1);
-}
-
